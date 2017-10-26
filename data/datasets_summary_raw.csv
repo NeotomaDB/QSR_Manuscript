@@ -1,1 +1,93 @@
-,year,DatasetType,cumsum94,2007,loss-on-ignition,156107,2007,macroinvertebrate,367153,2007,plant macrofossil,2172,2007,pollen,1810192,2007,pollen surface sample,2419221,2007,vertebrate fauna,324758,2008,geochronologic,2523193,2008,pollen surface sample,2420222,2008,vertebrate fauna,3270223,2010,vertebrate fauna,327159,2011,geochronologic,2529173,2011,pollen,1832194,2011,pollen surface sample,244060,2013,geochronologic,2530174,2013,pollen,1842224,2013,vertebrate fauna,32737,2014,charcoal,5844,2014,geochemistry,761,2014,geochronologic,274177,2014,insect,32108,2014,macroinvertebrate,370131,2014,ostracode surface sample,170154,2014,plant macrofossil,56175,2014,pollen,2021195,2014,pollen surface sample,2552225,2014,vertebrate fauna,3317244,2014,water chemistry,1728,2015,charcoal,6821,2015,diatom,9331,2015,diatom surface sample,14538,2015,energy dispersive X-ray spectroscopy (EDS/EDX),262,2015,geochronologic,321078,2015,insect,9695,2015,loss-on-ignition,161109,2015,macroinvertebrate,381119,2015,organic carbon,1123,2015,ostracode,7132,2015,ostracode surface sample,282155,2015,plant macrofossil,117176,2015,pollen,2540226,2015,vertebrate fauna,3369245,2015,water chemistry,447257,2015,X-ray fluorescence (XRF),19,2016,charcoal,8722,2016,diatom,14732,2016,diatom surface sample,62745,2016,geochemistry,963,2016,geochronologic,343379,2016,insect,14296,2016,loss-on-ignition,180124,2016,ostracode,9133,2016,ostracode surface sample,475140,2016,paleomagnetic,2146,2016,phytolith,1156,2016,plant macrofossil,208177,2016,pollen,2656196,2016,pollen surface sample,2596203,2016,specimen stable isotope,1208,2016,testate amoebae,82227,2016,vertebrate fauna,3457246,2016,water chemistry,1059254,2016,X-ray diffraction (XRD),110,2017,charcoal,8923,2017,diatom,21233,2017,diatom surface sample,63664,2017,geochronologic,349780,2017,insect,15097,2017,loss-on-ignition,183110,2017,macroinvertebrate,383116,2017,modern biochemistry,3134,2017,ostracode surface sample,534157,2017,plant macrofossil,236178,2017,pollen,2689228,2017,vertebrate fauna,3503247,2017,water chemistry,1162
+"","year","DatasetType","cumsum"
+"103",2007,"loss-on-ignition",156
+"116",2007,"macroinvertebrate",367
+"168",2007,"plant macrofossil",2
+"187",2007,"pollen",1810
+"208",2007,"pollen surface sample",2418
+"242",2007,"vertebrate fauna",3246
+"64",2008,"geochronologic",2523
+"209",2008,"pollen surface sample",2419
+"243",2008,"vertebrate fauna",3269
+"244",2010,"vertebrate fauna",3270
+"65",2011,"geochronologic",2529
+"188",2011,"pollen",1832
+"210",2011,"pollen surface sample",2439
+"66",2013,"geochronologic",2530
+"189",2013,"pollen",1842
+"245",2013,"vertebrate fauna",3272
+"7",2014,"charcoal",58
+"48",2014,"geochemistry",7
+"67",2014,"geochronologic",2741
+"83",2014,"insect",32
+"117",2014,"macroinvertebrate",370
+"143",2014,"ostracode surface sample",170
+"169",2014,"plant macrofossil",56
+"190",2014,"pollen",2021
+"211",2014,"pollen surface sample",2551
+"246",2014,"vertebrate fauna",3316
+"265",2014,"water chemistry",171
+"8",2015,"charcoal",68
+"24",2015,"diatom",93
+"34",2015,"diatom surface sample",145
+"41",2015,"energy dispersive X-ray spectroscopy (EDS/EDX)",2
+"68",2015,"geochronologic",3210
+"84",2015,"insect",96
+"104",2015,"loss-on-ignition",161
+"118",2015,"macroinvertebrate",381
+"128",2015,"organic carbon",1
+"133",2015,"ostracode",7
+"144",2015,"ostracode surface sample",282
+"170",2015,"plant macrofossil",117
+"191",2015,"pollen",2540
+"247",2015,"vertebrate fauna",3368
+"266",2015,"water chemistry",446
+"278",2015,"X-ray fluorescence (XRF)",1
+"9",2016,"charcoal",87
+"25",2016,"diatom",146
+"35",2016,"diatom surface sample",628
+"49",2016,"geochemistry",9
+"69",2016,"geochronologic",3433
+"85",2016,"insect",142
+"105",2016,"loss-on-ignition",180
+"134",2016,"ostracode",9
+"145",2016,"ostracode surface sample",475
+"153",2016,"paleomagnetic",2
+"161",2016,"phytolith",1
+"171",2016,"plant macrofossil",208
+"192",2016,"pollen",2656
+"212",2016,"pollen surface sample",2595
+"221",2016,"specimen stable isotope",1
+"227",2016,"testate amoebae",82
+"248",2016,"vertebrate fauna",3456
+"267",2016,"water chemistry",1058
+"275",2016,"X-ray diffraction (XRD)",1
+"10",2017,"charcoal",96
+"17",2017,"chironomid",1
+"26",2017,"diatom",388
+"36",2017,"diatom surface sample",637
+"50",2017,"geochemistry",11
+"70",2017,"geochronologic",3678
+"86",2017,"insect",174
+"92",2017,"insect modern",4
+"106",2017,"loss-on-ignition",190
+"119",2017,"macroinvertebrate",383
+"125",2017,"modern biochemistry",3
+"135",2017,"ostracode",11
+"146",2017,"ostracode surface sample",554
+"154",2017,"paleomagnetic",4
+"172",2017,"plant macrofossil",285
+"193",2017,"pollen",2826
+"213",2017,"pollen surface sample",2599
+"228",2017,"testate amoebae",84
+"249",2017,"vertebrate fauna",3548
+"268",2017,"water chemistry",1318
+"NA",NA,NA,NA
+"NA.1",NA,NA,NA
+"NA.2",NA,NA,NA
+"NA.3",NA,NA,NA
+"NA.4",NA,NA,NA
+"NA.5",NA,NA,NA
+"NA.6",NA,NA,NA
+"NA.7",NA,NA,NA
+"NA.8",NA,NA,NA
+"NA.9",NA,NA,NA

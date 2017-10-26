@@ -2,10 +2,11 @@ library(ggplot2)
 library(reshape2)
 library(randomcoloR)
 
-setwd("/users/scottsfarley/documents/qsr_manuscript")
+setwd("/Users/mastodon/Documents/GitHub/Neotoma/QSR_Manuscript")
 
 nds <- read.csv("data/neotoma_datasets_by_type.csv")
 ndsMelt <- melt(nds, id.vars=c("X"))
+
 #make the plot
 ggplot(ndsMelt, aes(x=as.factor(X), y=value,group=variable,fill=variable)) + 
   scale_x_discrete() +

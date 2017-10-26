@@ -5,10 +5,11 @@ library(dplyr)
 library(tidyr)
 library(randomcoloR)
 
-setwd("/users/scottsfarley/documents/qsr_manuscript")
+setwd("/Users/mastodon/Documents/GitHub/Neotoma/QSR_Manuscript")
 
-dat <- read.csv("data/neotoma_scrape_4-2017.csv")
-
+dat <- read.csv("data/neotoma_scrape_10-2017.csv")
+colnames(dat) <- c("DatasetID", "Levels", "Taxa", "Occurrences", "Upload", "Type")
+  
 substrRight <- function(x, n){
   substr(x, nchar(x)-n+1, nchar(x))
 }
@@ -34,8 +35,9 @@ for (i in dat_split){
   print(datatype)
   summary <- doProcess(i, datatype)
   summaries[[datatype]]<- summary
-  print(counter)
+#  print(counter)
 }
+
 # Summarize occurrences
 summaryMelt <- melt(summaries, id.vars=c('year'))
 summaryMelt$DatasetType <- summaryMelt$L1 #CHANGE COL NAME

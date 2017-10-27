@@ -47,6 +47,7 @@ ggplot(dsMelt, aes(x=as.factor(year), y=value,group=variable,fill=variable)) +
   ggtitle("Neotoma Datasets") +
   ylab("Cumulative Number of Datasets") +
   xlab("Year")
+ggsave("figures/CumulativeDatasets.pdf")
 
 occMelt <- read.csv("data/occMelt.csv", stringsAsFactors = F)
 occMelt$variable <- as.factor(occMelt$variable)
@@ -86,6 +87,8 @@ ggplot(occMelt, aes(x=as.factor(year), y=value,group=variable,fill=variable)) +
   geom_area(alpha = 1) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   #scale_fill_manual(values=randomColor(length(unique(occMelt$variable)))) +
+  theme(legend.text=element_text(size=6)) +
   ggtitle("Neotoma Occurrences") +
   ylab("Cumulative Number of Occurrences") +
   xlab("Year")
+ggsave("figures/CumulativeOccurrences.pdf")

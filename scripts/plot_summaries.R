@@ -2,30 +2,90 @@ library(ggplot2)
 library(reshape2)
 library(randomcoloR)
 
-setwd("/Users/mastodon/Documents/GitHub/Neotoma/QSR_Manuscript")
+# FIRST STEP: change working directory
+setwd("/Users/jessicablois/Documents/GitHub/Neotoma/QSR_Manuscript") 
 
-nds <- read.csv("data/neotoma_datasets_by_type.csv")
-ndsMelt <- melt(nds, id.vars=c("X"))
+dsMelt <- read.csv("data/dsMelt.csv", stringsAsFactors = F)
+dsMelt$variable <- as.factor(dsMelt$variable)
+# set the ordering for the levesl of variable
+levels(dsMelt$variable) <-  
+  c("X-ray spectroscopy",
+  "X-ray fluorescence",
+  "X-ray diffraction",
+  "phytolith",
+  "paleomagnetic",
+  "modern biochemistry",
+  "geochemistry",
+  "stable isotope",
+  "organic carbon",
+  "water chemistry",
+  "vertebrate fauna",
+  "testate amoebae",
+  "pollen surface sample",
+  "pollen",
+  "plant macrofossil",
+  "ostracode surface sample", 
+  "ostracode",
+  "macroinvertebrate", 
+  "loss-on-ignition",
+  "insect modern", 
+  "insect",
+  "geochronologic",
+  "diatom surface sample",
+  "diatom",
+  "chironomid",
+  "charcoal")                
+
 
 #make the plot
-ggplot(ndsMelt, aes(x=as.factor(X), y=value,group=variable,fill=variable)) + 
+ggplot(dsMelt, aes(x=as.factor(year), y=value,group=variable,fill=variable)) + 
   scale_x_discrete() +
   geom_area(alpha = 1) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  scale_fill_manual(values=randomColor(length(unique(ndsMelt$variable)))) +
+  #scale_fill_manual(values=randomColor(length(unique(ndsMelt$variable)))) +
+  theme(legend.text=element_text(size=6)) +
   ggtitle("Neotoma Datasets") +
   ylab("Cumulative Number of Datasets") +
   xlab("Year")
 
+occMelt <- read.csv("data/occMelt.csv", stringsAsFactors = F)
+occMelt$variable <- as.factor(occMelt$variable)
+# re order the levels 
+levels(occMelt$variable) <-  
+  c("X-ray spectroscopy",
+    "X-ray fluorescence",
+    "X-ray diffraction",
+    "water chemistry",
+    "vertebrate fauna",
+    "testate amoebae",
+    "pollen surface sample",
+    "pollen",
+    "plant macrofossil",
+    "ostracode surface sample", 
+    "ostracode",
+    "phytolith",
+    "paleomagnetic",
+    "modern biochemistry", ###
+    "geochemistry",
+    "stable isotope",
+    "organic carbon",
+    "macroinvertebrate", 
+    "loss-on-ignition",
+    "insect modern", 
+    "insect",
+    "geochronologic",
+    "diatom surface sample",
+    "diatom",
+    "chironomid",
+    "charcoal")                
 
-nocc <- read.csv("data/neotoma_occurrences_by_type.csv")
-noMelt <- melt(nocc, id.vars=c("X"))
+
 #make the plot
-ggplot(noMelt, aes(x=as.factor(X), y=value,group=variable,fill=variable)) + 
+ggplot(occMelt, aes(x=as.factor(year), y=value,group=variable,fill=variable)) + 
   scale_x_discrete() +
   geom_area(alpha = 1) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  scale_fill_manual(values=randomColor(length(unique(ndsMelt$variable)))) +
+  #scale_fill_manual(values=randomColor(length(unique(occMelt$variable)))) +
   ggtitle("Neotoma Occurrences") +
-  ylab("Cumulative Number of Records") +
+  ylab("Cumulative Number of Occurrences") +
   xlab("Year")

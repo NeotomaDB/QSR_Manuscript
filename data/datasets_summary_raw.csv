@@ -29,7 +29,6 @@
 "8",2015,"charcoal",68
 "24",2015,"diatom",93
 "34",2015,"diatom surface sample",145
-"41",2015,"energy dispersive X-ray spectroscopy (EDS/EDX)",2
 "68",2015,"geochronologic",3210
 "84",2015,"insect",96
 "104",2015,"loss-on-ignition",161
@@ -41,7 +40,8 @@
 "191",2015,"pollen",2540
 "247",2015,"vertebrate fauna",3368
 "266",2015,"water chemistry",446
-"278",2015,"X-ray fluorescence (XRF)",1
+"278",2015,"X-ray fluorescence",1
+"41",2015,"X-ray spectroscopy",2
 "9",2016,"charcoal",87
 "25",2016,"diatom",146
 "35",2016,"diatom surface sample",628
@@ -56,11 +56,11 @@
 "171",2016,"plant macrofossil",208
 "192",2016,"pollen",2656
 "212",2016,"pollen surface sample",2595
-"221",2016,"specimen stable isotope",1
+"221",2016,"stable isotope",1
 "227",2016,"testate amoebae",82
 "248",2016,"vertebrate fauna",3456
 "267",2016,"water chemistry",1058
-"275",2016,"X-ray diffraction (XRD)",1
+"275",2016,"X-ray diffraction",1
 "10",2017,"charcoal",96
 "17",2017,"chironomid",1
 "26",2017,"diatom",388

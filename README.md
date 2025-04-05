@@ -1,3 +1,10 @@
+<!-- badges: start -->
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-archived-orange.svg)](https://doi.org/10.1017/qua.2017.105)
+
+<!-- badges: end -->
+
+
 # QSR_Manuscript
 Repository for scripts and figures associated with Neotoma ms. to be submitted to QSR
 
